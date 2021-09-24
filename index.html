@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación Formulario</title>
+</head>
+<body>
+
+    <form action="#" onsubmit="return vaidarForma(this)">
+    
+        <table width="200" id="enfasis-columna">
+            <caption>Registro de datos</caption>      
+
+            <!-- Usuario -->
+    <tr>
+            <td class="columna">Usuario:(*)</td>    
+        <td>
+            <input type="text" name="usuario" value="Escribir usuario" onfocus="this.select()" class="default">
+        </td>
+    </tr>
+    
+    <!-- Contraseña -->
+    <tr>
+        <td class="columna">Password:(*)</td>   
+    <td>
+        <input type="password" name="password" onfocus="this.select()" class="default">
+    </td>
+</tr>
+ 
+<!-- Género -->
+<tr>
+    <td class="columna">Género:(*)</td>
+<td>
+    Masculino: <input type="radio" name="genero" value="M">
+    &nbsp; &nbsp; &nbsp;
+    Femenino: <input type="radio" name="genero" value="F">
+    &nbsp; &nbsp; &nbsp;
+    Otro: <input type="radio" name="genero" value="O">
+</td>
+</tr>
+
+<!-- Ocupación -->
+<tr>
+    <td class="columna">Ocupación:(*)</td>
+<td>
+    <select name="ocupacion" id="default">
+        <option value="">Seleccionar</option>
+        <option value="2">Profesor</option>
+        <option value="3">Ingeniero</option>
+        <option value="4">Jubilado</option>
+    </select>
+</td>
+</tr>
+
+<!-- Tecnologías -->
+<tr>
+    <td class="columna">Tecnologías de Desarrollo:(*)</td>
+<td>
+    Java <input type="checkbox" name="tecnologia" value="java"> 
+    JS <input type="checkbox" name="tecnologia" value="js">   
+    PHP <input type="checkbox" name="tecnologia" value="php">
+</td>
+</tr>
+
+<!-- Música -->
+<tr>
+    <td class="columna">Música:(*)</td>
+<td>
+    <select name="msuica" id="default">
+        <option value="">Seleccionar</option>
+        <option value="rock">Rock</option>
+        <option value="salsa">Salsa</option>
+        <option value="jazz">Jazz</option>
+        <option value="clasica">Clásica</option>
+    </select>
+</td>
+</tr>
+
+<!-- Comentarios -->
+<tr>
+    <td class="columna">Comentarios</td>
+<td>
+    <textarea name="comentarios" 
+    id="" 
+    cols="30" 
+    rows="2" 
+    onfocus="this.select()" 
+    >Comentarios </textarea>
+</td>
+
+<tr>
+    <td>
+        <input type="reset" value="Limpiar" class="default">
+    </td>
+    <td>
+        <input type="submit" value="Enviar" class="default">
+    </td>
+</tr>
+
+
+</table>
+    </form>
+    
+</body>
+</html>
